@@ -9,32 +9,31 @@
 <body>
     <div class="container">
         <h1>Ball in a Maze</h1>
-    <div class="game-container">
-        <div class="maze">
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="wall" style="top: 0; left: 0; width: 100%; height: 20px;"></div>
-            <div class="wall" style="top: 95%; left: 0; width: 100%; height: 20px;"></div>
-            <div class="wall" style="top: 80%; left: 10%; width: 50%; height: 20px;"></div>
-            <div class="wall" style="top: 20%; right: 0; width: 20px; height: 80%;"></div>
-            <div class="wall" style="top: 40%; left: 40%; width: 20px; height: 40%;"></div>
-            <div class="wall" style="top: 0%; left: 30%; width: 20px; height: 40%;"></div>
-            <div class="wall" style="top: 10%; left: 0%; width: 20px; height: 30%;"></div>
-            <div class="wall" style="top: 60%; right:0%; width: 20%; height: 20px;"></div>
-            <div class="wall" style="top: 40%; left:0%; width: 10%; height: 20px;"></div>
-            <div class="wall" style="top: 20%; left: 60%; width: 20px; height: 65%;"></div>
-            <div class="wall" style="top: 20%; left: 60%; width: 40%; height: 20px;"></div>
-            <div class="wall" style="top: 40%; left: 10%; width: 20px; height: 40%;"></div>
+        <div class="game-container">
+            <div class="maze">
+                <div class="ball"></div>
+                <div class="wall" style="top: 0; left: 0; width: 100%; height: 20px;"></div>
+                <div class="wall" style="top: 95%; left: 0; width: 100%; height: 20px;"></div>
+                <div class="wall" style="top: 80%; left: 10%; width: 50%; height: 20px;"></div>
+                <div class="wall" style="top: 20%; right: 0; width: 20px; height: 80%;"></div>
+                <div class="wall" style="top: 40%; left: 40%; width: 20px; height: 40%;"></div>
+                <div class="wall" style="top: 0%; left: 25%; width: 20px; height: 40%;"></div>
+                <div class="wall" style="top: 15%; left: 0%; width: 20px; height: 30%;"></div>
+                <div class="wall" style="top: 60%; right: 0%; width: 20%; height: 20px;"></div>
+                <div class="wall" style="top: 40%; left: 0%; width: 10%; height: 20px;"></div>
+                <div class="wall" style="top: 20%; left: 60%; width: 20px; height: 65%;"></div>
+                <div class="wall" style="top: 20%; left: 60%; width: 40%; height: 20px;"></div>
+                <div class="wall" style="top: 40%; left: 10%; width: 20px; height: 40%;"></div>
+            </div>
+            <div class="scoreboard">
+                <p>Score: <span id="score">0</span></p>
+            </div>
+            <div class="controls">
+                <button id="start-btn">Start</button>
+                <button id="resume-btn" disabled>Resume</button>
+                <button id="stop-btn" disabled>Stop</button>
+            </div>
         </div>
-        <div class="scoreboard">
-            <p>Score: <span id="score">0</span></p>
-        </div>
-        <div class="controls">
-            <button id="start-btn">Start</button>
-            <button id="resume-btn">Resume</button>
-            <button id="stop-btn">Stop</button>
-        </div>
-    </div>
     </div>
     <script src="script.js"></script>
 </body>

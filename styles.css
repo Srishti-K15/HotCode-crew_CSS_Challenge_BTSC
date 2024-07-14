@@ -1,23 +1,20 @@
-body{
-    
-    background-color:#468585;
+body {
+    background-color: #468585;
+    font-family: Arial, sans-serif;
 }
 
-.container{
+.container {
     font-size: larger;
     text-align: center;
-
 }
-/* Game container styles */
+
 .game-container {
-    width:500px;
+    width: 500px;
     height: 400px;
     margin: 40px auto;
-   
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Maze styles */
 .maze {
     position: relative;
     width: 100%;
@@ -26,29 +23,26 @@ body{
 }
 
 .ball {
-    
     position: absolute;
     z-index: 2;
     left: 10px;
+    top: 10px;
     width: 18px;
     height: 18px;
     background-color: #50B498;
     border: 1px solid #468585;
     border-radius: 50%;
-    animation: move-ball 5s linear infinite;
+    animation: move-ball 5s linear infinite paused;
 }
 
 .wall {
-
     position: absolute;
     background-color: rgb(79, 75, 75);
-    
 }
 
-/* Scoreboard styles */
 .scoreboard {
     position: absolute;
-    background-color:#DEF9C4;
+    background-color: #DEF9C4;
     padding: 0px 20px;
     top: 20px;
     right: 20px;
@@ -58,7 +52,6 @@ body{
     border-radius: 2em;
 }
 
-/* Controls styles */
 .controls {
     margin-top: 20px;
     text-align: center;
@@ -82,10 +75,10 @@ button:disabled {
 
 /* Animation */
 @keyframes move-ball {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(380px);
-    }
+    0% { top: 25px; left: 10px; }
+    20% { top: 25px; left: 80px; }   
+    40% { top: 270px; left: 80px; }  
+    50% { top: 270px; left: 160px; }
+    70% { top: 25px; left: 160px; }  
+    100% { top: 25px; left: 400px; }
 }
