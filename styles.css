@@ -32,24 +32,12 @@ body {
     background-color: #50B498;
     border: 1px solid #468585;
     border-radius: 50%;
-    animation: move-ball 5s linear infinite paused;
+    animation: move-ball 8s linear infinite paused;
 }
 
 .wall {
     position: absolute;
     background-color: rgb(79, 75, 75);
-}
-
-.scoreboard {
-    position: absolute;
-    background-color: #DEF9C4;
-    padding: 0px 20px;
-    top: 20px;
-    right: 20px;
-    font-size: 19px;
-    font-weight: bold;
-    color: #333;
-    border-radius: 2em;
 }
 
 .controls {
@@ -73,7 +61,6 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* Animation */
 @keyframes move-ball {
     0% { top: 25px; left: 10px; }
     20% { top: 25px; left: 80px; }   
